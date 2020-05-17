@@ -1,14 +1,14 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
+ 
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "优购商城",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
+  "style": "v2",  
   "sitemapLocation": "sitemap.json"
 }
