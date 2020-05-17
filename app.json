@@ -17,9 +17,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#f8554d",
     "navigationBarTitleText": "优购商城",
-    "navigationBarTextStyle":"black"  
+    "navigationBarTextStyle":"white"  
   },
   "tabBar": {
     "color": "",
@@ -47,7 +47,7 @@
         "selectedIconPath": "icons/icon_cart_active@3x.png"
       },   {
         "pagePath": "pages/user/index",
-        "text": "我的",
+        "text": "我的", 
         "iconPath": "icons/icon_me@3x.png",
         "selectedIconPath": "icons/icon_me_active@3x.png"
       }

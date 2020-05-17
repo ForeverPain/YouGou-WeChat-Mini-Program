@@ -1,4 +1,3 @@
-<view >
-  首页
-  <text class='iconfont iconcomments-regular'></text>
+<view class='pyg_index'>
+  <SearchInput></SearchInput>
 </view>
