@@ -8,7 +8,9 @@ Page({
     //轮播图数组
     swiperList: [],
     //导航数组
-    cateList:[] 
+    cateList:[], 
+    //楼层数组
+    floorList:[]
 
   },
   //options(Object)
@@ -24,7 +26,8 @@ Page({
     // });
    //
    this.gitSwiperList();
-   this.gitCateList()
+   this.gitCateList();
+   this.gitFloorList();
   },
   //获取轮播图数据
   gitSwiperList(){
@@ -40,6 +43,14 @@ Page({
     .then(result => {
       this.setData({
         cateList : result.data.message
+      })
+    }) 
+  },
+  gitFloorList(){
+    request({url: "https://api-hmugo-web.itheima.net/api/public/v1/home/floordata"})
+    .then(result => {
+      this.setData({
+        floorList : result.data.message
       })
     }) 
   }
