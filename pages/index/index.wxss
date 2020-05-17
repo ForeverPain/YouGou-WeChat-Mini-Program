@@ -1,4 +1,3 @@
-view{
-    /* 使用主题颜色 */
-    color: var(--themeColor);
+.index_swiper swiper image {
+  width: 100%;
 }
