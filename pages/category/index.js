@@ -1,19 +1,32 @@
-// pages/category/index.js
+import {
+  request
+} from "../../request/index.js";
+//Page Object
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
+    commodityClassify: [],
+    commodityDetails: []
+  },
+  Total: [],
+  onLoad: function (option) {
+    this.getToal()
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-//获取分类数据
-
-})
+  getToal() {
+    request({
+        url: 'https://api-hmugo-web.itheima.net/api/public/v1/categories'
+      })
+      .then(res => {
+        console.log(res);
+        
+        this.Total = res.data.message
+        let commodityClassify = this.Total.map(v => v.cat_name)
+        let commodityDetails= this.Total[0].children
+        this.setData({
+          commodityClassify,
+          commodityDetails
+        })
+      })
+  }
+});

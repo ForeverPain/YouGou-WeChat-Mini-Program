@@ -1,1 +1,22 @@
-/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+page .cates_container {
+  height: calc(100vh-90rpx);
+  display: flex;
+  width: 750rpx;
+}
+page .cates_container .left_menu {
+  flex: 2;
+  width: 300rpx;
+}
+page .cates_container .left_menu .menu_item {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+page .cates_container .right_content {
+  flex: 5;
+}
